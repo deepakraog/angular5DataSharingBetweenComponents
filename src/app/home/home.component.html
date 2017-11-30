@@ -1,0 +1,20 @@
+
+
+<div class="row">
+<p>
+ Welcome {{username}}
+</p>
+
+<div style="padding:10px;"><p>Message : {{message}}</p></div>
+<div style="margin:20px;"><button (click)="newMessage()">New Message</button></div>
+
+<div class="row">
+	<ul *ngFor="let user of userData">
+		<li>{{user.name}}</li>
+		<li>{{user.age}}</li>
+		<li>{{user.qualification}}</li>
+		<li>{{user.designation}}</li>
+		<li>{{user.phone}}</li>
+
+	</ul>
+</div>
